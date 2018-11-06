@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>VueJS</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <div id="vue-app" class="vueApp">
+    <p>Name: {{name}}</p>
+    <p>Surname: {{surname}}</p>
+    <p>Job: {{job}}</p>
+    <a class="vueApp" v-bind:href="website">Website</a>
+    <p v-html="websitetag"></p>
+    <p>Debug: {{test()}}</p>
+  </div>
+  <div id="vue-calc" class="vueCalc">
+    <p>Name: {{name}}</p>
+    <p>Surname: {{surname}}</p>
+    <p>Job: {{job}}</p>
+  </div>
+    <script src="app.js"></script>
+  </body>
+</html>
